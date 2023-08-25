@@ -50,6 +50,17 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v3
 
+    - name: Setup .net
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+          
+    - name: restore dependencies
+      run: dotnet restore
+        
+    - name: build and print
+      run: dotnet build --no-restore
+      
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
