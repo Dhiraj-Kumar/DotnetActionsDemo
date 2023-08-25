@@ -5,45 +5,45 @@ on:
     branches:
       - dev
 jobs:
-  # build:
-  #   runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: checkout code
-  #       uses: actions/checkout@v3
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Setup .net
-  #       uses: actions/setup-dotnet@v3
-  #       with:
-  #         dotnet-version: 7.0.x
+      - name: Setup .net
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
           
-  #     - name: restore dependencies
-  #       run: dotnet restore
+      - name: restore dependencies
+        run: dotnet restore
         
-  #     - name: build and print
-  #       run: |
-  #         echo application building
-  #         dotnet build --no-restore
-  # test:
-  #   needs: build
-  #   runs-on: ubuntu-latest
+      - name: build and print
+        run: |
+          echo application building
+          dotnet build --no-restore
+  test:
+    needs: build
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: checkout code
-  #       uses: actions/checkout@v3
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
 
-  #     - name: Setup .net
-  #       uses: actions/setup-dotnet@v3
-  #       with:
-  #         dotnet-version: 7.0.x
+      - name: Setup .net
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
           
-  #     - name: restore dependencies
-  #       run: dotnet restore
+      - name: restore dependencies
+        run: dotnet restore
         
-  #     - name: test
-  #       run: dotnet test --no-restore
+      - name: test
+        run: dotnet test --no-restore
   publish:
-    # needs: test
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -54,7 +54,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: dhiraj2001/testapp
-        tags: v1, latest
+        tags: latest
         registry: docker.io
         dockerfile: CalculatorApp/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
