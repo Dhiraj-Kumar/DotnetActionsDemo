@@ -1,0 +1,12 @@
+/workspaces/codespaces-blank/CalculatorApp/bin/Debug/net7.0/CalculatorApp.deps.json
+/workspaces/codespaces-blank/CalculatorApp/bin/Debug/net7.0/CalculatorApp.dll
+/workspaces/codespaces-blank/CalculatorApp/bin/Debug/net7.0/CalculatorApp.pdb
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.csproj.AssemblyReference.cache
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.AssemblyInfoInputs.cache
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.AssemblyInfo.cs
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.csproj.CoreCompileInputs.cache
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.dll
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/refint/CalculatorApp.dll
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/CalculatorApp.pdb
+/workspaces/codespaces-blank/CalculatorApp/obj/Debug/net7.0/ref/CalculatorApp.dll
